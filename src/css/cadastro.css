@@ -1,0 +1,144 @@
+:root {
+  --bg-dark: #0a0d14;
+  --bg-card: #111827;
+  --neon-blue: #00eaff;
+  --neon-purple: #8b5cf6;
+  --neon-cyan: #22d3ee;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-main);
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+#particles-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+}
+
+/* ======================
+   Layout
+====================== */
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.register-card {
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 0 45px rgba(0, 234, 255, 0.12);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ======================
+   Header
+====================== */
+.register-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.register-header span {
+  color: var(--neon-cyan);
+}
+
+.register-header p {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+/* ======================
+   Form
+====================== */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--text-muted);
+}
+
+.input-group input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: #020617;
+  color: var(--text-main);
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+}
+
+/* ======================
+   Button
+====================== */
+.btn-register {
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-register:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.6);
+}
+
+/* ======================
+   Footer
+====================== */
+.register-footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.register-footer a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}

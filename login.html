@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LDA Login | CréditoTech Nexus</title>
+
+  <meta name="description" content="Login seguro da plataforma LDA CréditoTech Nexus." />
+
+  <link rel="stylesheet" href="src/css/login.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <main class="login-container">
+    <section class="login-card">
+      <header class="login-header">
+        <h1>LDA<span>CréditoTech</span></h1>
+        <p>Acesso seguro à plataforma Nexus</p>
+      </header>
+
+      <form id="loginForm" class="login-form">
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required placeholder="usuario@exemplo.com" />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" required placeholder="••••••••" />
+        </div>
+
+        <button type="submit" class="btn-login">Entrar</button>
+
+        <footer class="login-footer">
+          <a href="#">Esqueci minha senha</a>
+          <a href="./cadastro.html">Criar conta</a>
+        </footer>
+      </form>
+    </section>
+  </main>
+
+  <script src="src/js/login.js"></script>
+</body>
+</html>
